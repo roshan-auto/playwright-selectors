@@ -1,0 +1,12 @@
+{
+  "name": "playwright-selectors-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo framework to show stable vs flaky selectors in Playwright.",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.2"
+  }
+}
