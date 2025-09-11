@@ -21,11 +21,16 @@ tests/login-stable.spec.js # Good selectors (stable demo)
    ```bash
    npm install
    ```
-2. Run flaky test:
+2. Install Playwright browsers (required after first setup or updates):
+   ```bash
+   npx playwright install
+   ```
+
+3. Run flaky test:
    ```bash
    npx playwright test tests/login-flaky.spec.js
    ```
-3. Run stable test:
+4. Run stable test:
    ```bash
    npx playwright test tests/login-stable.spec.js
    ```
