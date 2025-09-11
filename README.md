@@ -1,6 +1,6 @@
-# Playwright Selectors Lab 🎯
+# Playwright Selectors
 
-This repo demonstrates **flaky vs stable selectors** in Playwright using a simple
+This repo demonstrates **flaky vs stable selectors** in Playwright using a very simple
 Page Object Model (POM) framework.
 
 Target site: [Testbed](https://roshan-auto.github.io/testbed/)
@@ -8,7 +8,6 @@ Target site: [Testbed](https://roshan-auto.github.io/testbed/)
 ## 🌟 What You'll Learn
 - Why `nth-child` and deeply nested CSS are fragile
 - Why Playwright recommends **role selectors** and **test IDs**
-- How to build maintainable tests with Page Object Model (POM)
 
 ## 📂 Project Layout
 ```
@@ -37,10 +36,3 @@ tests/login-stable.spec.js # Good selectors (stable demo)
 3. Use **text selectors** only when text is stable
 4. Avoid deeply nested CSS / XPath
 5. Review selectors in code reviews
-
-See: [Playwright Selectors Best Practices](https://playwright.dev/docs/selectors#best-practices)
-
-## 🧩 Next Steps
-- Add more page objects for forms, modals, or dynamic elements
-- Demonstrate `getByTestId` usage
-- Show scoping selectors (`locator().getByRole()`)
