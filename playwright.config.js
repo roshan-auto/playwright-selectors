@@ -6,7 +6,7 @@ module.exports = defineConfig({
   retries: 0,
   use: {
     baseURL: 'https://roshan-auto.github.io/testbed/',
-    headless: true,
+    headless: false,
     trace: 'on-first-retry'
   },
   reporter: [['list']]

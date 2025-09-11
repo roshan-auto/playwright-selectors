@@ -13,12 +13,12 @@ exports.LoginPage = class LoginPage {
     // ✅ Stable selectors (recommended)
     this.usernameInput = page.getByRole('textbox', { name: 'Username' });
     this.passwordInput = page.getByRole('textbox', { name: 'Password' });
-    this.loginButton = page.getByRole('button', { name: 'Log In' });
+    this.loginButton = page.getByRole('button', { name: 'Sign In' });
     this.welcomeHeading = page.getByRole('heading', { name: 'Welcome' });
   }
 
   async goto() {
-    await this.page.goto('/');
+    await this.page.goto('');
   }
 
   // Flaky login (shows bad practice)
