@@ -1,5 +1,4 @@
 // Page Object Model for Login Page
-const { expect } = require('@playwright/test');
 
 exports.LoginPage = class LoginPage {
   constructor(page) {
@@ -35,7 +34,7 @@ exports.LoginPage = class LoginPage {
     await this.loginButton.click();
   }
 
-  async assertWelcomeVisible() {
-    await expect(this.welcomeHeading).toBeVisible();
+  getWelcomeHeading() {
+    return this.welcomeHeading;
   }
 };

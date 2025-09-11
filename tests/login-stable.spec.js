@@ -1,5 +1,5 @@
 // ✅ Demonstrates stable Playwright-recommended selectors
-const { test } = require('@playwright/test');
+const { test, expect } = require('@playwright/test');
 const { LoginPage } = require('../pages/LoginPage');
 
 test('login with stable selectors', async ({ page }) => {
@@ -10,5 +10,5 @@ test('login with stable selectors', async ({ page }) => {
   await loginPage.login('demo', 'demo123');
 
   // Assert welcome heading
-  await loginPage.assertWelcomeVisible();
+  await expect(loginPage.getWelcomeHeading()).toBeVisible();
 });

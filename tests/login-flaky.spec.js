@@ -7,8 +7,8 @@ test('login with flaky selectors', async ({ page }) => {
   await loginPage.goto();
 
   // Using brittle nth-child selectors
-  await loginPage.loginWithFlakySelectors('qa_user', 'secret');
+  await loginPage.loginWithFlakySelectors('demo', 'demo123');
 
   // This may break if DOM structure changes
-  await loginPage.assertWelcomeVisible();
+   await expect(loginPage.getWelcomeHeading()).toBeVisible();
 });
